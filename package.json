@@ -1,0 +1,11 @@
+{
+	"name": "itsuki-ai",
+	"version": "1.0.0",
+	"description": "Web chat ai",
+	"main": "index.js",
+	"author": "Hady Zen",
+	"scripts": {
+		"start": "node itsuki.js",
+		"dev": "node itsuki.js"
+	}
+}
