@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Itsuki AI</title>
+ <style>
+body {
+ font-family: sans-serif;
+ margin: 0;
+ padding: 0;
+ }
+
+ .chat-container {
+ display: flex;
+ flex-direction: column;
+ height: 100vh;
+ }
+
+ .chat-header {
+ background-color: #f0f0f0;
+ padding: 10px;
+ text-align: center;
+ }
+
+ .chat-body {
+ flex-grow: 1;
+ overflow-y: auto;
+ padding: 10px;
+ }
+
+ .chat-message {
+ display: flex;
+ margin-bottom: 10px;
+ }
+
+ .user-message {
+ justify-content: flex-end;
+ }
+
+ .bot-message {
+ justify-content: flex-start;
+ }
+
+ .message-content {
+ padding: 10px;
+ border-radius: 5px;
+ max-width: 70%;
+ background-color: #fff;
+ }
+
+ .user-message .message-content {
+ background-color: #e0e0e0;
+ }
+
+ .chat-input {
+ padding: 10px;
+ display: flex;
+ align-items: center;
+ }
+
+ .chat-input input {
+ flex-grow: 1;
+ padding: 8px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ }
+
+ .chat-input button {
+ padding: 8px 15px;
+ background-color: #007bff;
+ color: #fff;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ }
+ </style>
+</head>
+<body>
+ <div class="chat-container">
+  <div class="chat-header">
+   <h1>Itsuki AI</h1>
+  </div>
+  <div class="chat-body" id="chat-body">
+  </div>
+  <div class="chat-input">
+   <input type="text" id="chat-input" placeholder="masukkan pesan...">
+   <button id="send-button">Kirim</button>
+  </div>
+ </div>
+
+ <script>
+  const chatBody = document.getElementById('chat-body');
+  const chatInput = document.getElementById('chat-input');
+  const sendButton = document.getElementById('send-button');
+
+  sendButton.addEventListener('click', sendMessage);
+  chatInput.addEventListener('keyup', (event) => {
+   if (event.key === 'Enter') {
+    sendMessage();
+   }
+  });
+
+  async function sendMessage() {
+   const message = chatInput.value;
+   if (message.trim() !== '') {
+    displayMessage('user', message);
+
+    try {
+     const response = await fetch('https://api-gemini-flash.glitch.me/gemini?text=' + message);
+     const data = await response.json();
+     displayMessage('bot', data.response);
+    } catch (error) {
+     console.error('Error fetching data:', error);
+     displayMessage('bot', 'Maaf, ada kesalahan. Silakan coba lagi.' + error);
+    }
+
+    chatInput.value = '';
+   }
+  }
+
+  function displayMessage(type, message) {
+   const messageElement = document.createElement('div');
+   messageElement.classList.add('chat-message');
+   messageElement.classList.add(`${type}-message`);
+
+   const contentElement = document.createElement('div');
+   contentElement.classList.add('message-content');
+   contentElement.textContent = message;
+
+   messageElement.appendChild(contentElement);
+   chatBody.appendChild(messageElement);
+   chatBody.scrollTop = chatBody.scrollHeight;
+  }
+ </script>
+</body>
+  </html>
