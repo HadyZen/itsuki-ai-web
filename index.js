@@ -1,7 +1,7 @@
 const { spawn } = require("child_process");
 
 function hadySaveng() {
- const child = spawn(`npm install axios && node itsuki.js`, {
+ const child = spawn(`npm install express && node itsuki.js`, {
 	cwd: __dirname,
 	stdio: "inherit",
 	shell: true
