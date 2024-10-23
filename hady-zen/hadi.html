@@ -64,6 +64,7 @@
             cursor: pointer;
         }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <div class="chat-container">
@@ -95,8 +96,7 @@
                 displayMessage('user', message);
 
                 try {
-                    import axios from 'axios';
-                    const response = await axios.get(`https://api-gemini-flash.glitch.me/gemini?text=${message}`);
+                    const response = await axios.get(`https://api-gemini-flash.glitch.me/gemini?text=${encodeURIComponent(message)}`);
                     if (response.data && response.data.result) {
                         displayMessage('bot', response.data.result);
                     } else {
