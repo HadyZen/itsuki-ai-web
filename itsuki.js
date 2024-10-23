@@ -8,7 +8,7 @@ const apiKey = 'AIzaSyA8PBFq-iXXc7--qN2Hvq0x_XPbuW0T6kc';
 
 const apiEndpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`;
 
-app.get('/generate-answer', async (req, res) => {
+app.get('/gemini', async (req, res) => {
     const text = req.query.text || '';
 
     try {
