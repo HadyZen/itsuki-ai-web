@@ -97,7 +97,11 @@
 
                 try {
                     const response = await axios.get(`https://api-gemini-flash.glitch.me/gemini?text=${message}`);
-                    displayMessage('bot', response.data.result);
+                    if (response.data && response.data.result) {
+                        displayMessage('bot', response.data.result);
+                    } else {
+                        displayMessage('bot', 'Tidak ada hasil dari server.');
+                    }
                 } catch (error) {
                     displayMessage('bot', 'Maaf, terjadi kesalahan dalam menghubungi server. Silakan coba lagi.');
                 }
