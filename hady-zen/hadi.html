@@ -96,7 +96,7 @@
                 displayMessage('user', message);
 
                 try {
-                    const response = await axios.get(`https://api-gemini-flash.glitch.me/gemini?text=${encodeURIComponent(message)}`);
+                    const response = await axios.get(`https://api-gemini-flash.glitch.me/gemini?text=${message}`);
                     if (response.data && response.data.result) {
                         displayMessage('bot', response.data.result);
                     } else {
