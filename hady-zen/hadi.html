@@ -109,7 +109,7 @@ body {
 
     try {
      const axios = require('axios');
-     const { data } = await axios.get(`https://api-gemini-flash.glitch.me/gemini?text=${encodeURIComponent(message)}`);
+     const { data } = await axios.get(`https://api-gemini-flash.glitch.me/gemini?text=${message}`);
      displayMessage('bot', data.result);
     } catch (error) {
      displayMessage('bot', 'Error: ' + error);
