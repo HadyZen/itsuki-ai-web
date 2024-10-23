@@ -3,7 +3,7 @@ const app = express();
 const path = requrie('path');
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'hady-zen', 'hadi.html'); 
+  res.sendFile(path.join(__dirname, 'hady-zen', 'hadi.html')); 
 });
 
 const port = 3000;
