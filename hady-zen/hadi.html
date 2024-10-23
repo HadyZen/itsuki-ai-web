@@ -99,7 +99,7 @@
                     const response = await axios.get(`https://api-gemini-flash.glitch.me/gemini?text=${message}`);
                     displayMessage('bot', response.data.result);
                 } catch (error) {
-                    displayMessage('bot', 'Error: ' + error.message);
+                    displayMessage('bot', 'Maaf, terjadi kesalahan dalam menghubungi server. Silakan coba lagi.');
                 }
 
                 chatInput.value = '';
