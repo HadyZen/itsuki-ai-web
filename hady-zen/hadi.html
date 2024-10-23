@@ -94,7 +94,6 @@ body {
   const chatBody = document.getElementById('chat-body');
   const chatInput = document.getElementById('chat-input');
   const sendButton = document.getElementById('send-button');
-  const axios = require('axios');
 
   sendButton.addEventListener('click', sendMessage);
   chatInput.addEventListener('keyup', (event) => {
@@ -109,11 +108,11 @@ body {
     displayMessage('user', message);
 
     try {
-     const response = await axios.get('https://api-gemini-flash.glitch.me/gemini?text=' + message);
-     displayMessage('bot', response.data);
+     const axios = require('axios');
+     const { data } = await axios.get(`https://api-gemini-flash.glitch.me/gemini?text=${encodeURIComponent(message)}`);
+     displayMessage('bot', data.result);
     } catch (error) {
-     console.error('Error fetching data:', error);
-     displayMessage('bot', 'Maaf, ada kesalahan. Silakan coba lagi.' + error);
+     displayMessage('bot', 'Error: ' + error);
     }
 
     chatInput.value = '';
