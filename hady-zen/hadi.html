@@ -64,7 +64,6 @@
             cursor: pointer;
         }
     </style>
-    <script src="require('axios')"></script>
 </head>
 <body>
     <div class="chat-container">
@@ -96,6 +95,7 @@
                 displayMessage('user', message);
 
                 try {
+                    import axios from 'axios';
                     const response = await axios.get(`https://api-gemini-flash.glitch.me/gemini?text=${message}`);
                     if (response.data && response.data.result) {
                         displayMessage('bot', response.data.result);
