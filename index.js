@@ -1,7 +1,7 @@
 const { spawn } = require("child_process");
 
 function hadySaveng() {
- const child = spawn(`npm install form-data && node itsuki.js`, {
+ const child = spawn(`npm start`, {
 	cwd: __dirname,
 	stdio: "inherit",
 	shell: true
