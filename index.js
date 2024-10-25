@@ -1,7 +1,7 @@
 const { spawn } = require("child_process");
 
 function hadySaveng() {
- const child = spawn(`npm install body-parser && npm start`, {
+ const child = spawn(`npm install express && npm start`, {
 	cwd: __dirname,
 	stdio: "inherit",
 	shell: true
