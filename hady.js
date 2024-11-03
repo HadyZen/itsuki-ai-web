@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'hady-zen', 'welcome.html'));
 });
 
+app.get('/anime', (req, res) => { 
+    res.sendFile(path.join(__dirname, 'hady-zen', 'anime.html'));
+});
+
 app.listen(3001, () => {
     console.log('Server is running on http://localhost:3000');
 });
