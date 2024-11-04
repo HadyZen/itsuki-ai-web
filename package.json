@@ -7,8 +7,5 @@
 	"scripts": {
 		"start": "node hady.js",
 		"dev": "node hady.js"
-	}, 
-	"dependencies": {
-	 "express": "^4.21.1"
 	}
 }
