@@ -35,17 +35,20 @@
     }
 
     .button {
-      padding: 10px 10px;
+      padding: 10px 20px;
       background-color: #0899;
       color: white;
       border: none;
-      border-radius: 10px;
+      border-radius: 6px;
       cursor: pointer;
       animation: fadeIn 4s;
+      margin: 2px;
+      min-width: 80px;
+      min-height: 20px;
     }
 
     .button:hover {
-      background-color: #3e8e41;
+      background-color: #0899;
     }
     .keren {
       font-size: 34px;
@@ -59,7 +62,7 @@
       0%, 100% {
         transform: translateY(0);
       }
-50% {
+      50% {
         transform: translateY(-10px);
       }
     }
@@ -71,14 +74,14 @@
         opacity: 1;
       }
     }
-    </style>
-  </head>
-  <body>
-    <h2 class="keren">Selamat datang!</h2>
-    <button class="button" onclick="window.location.href = window.location.origin + '/anime'">anime</button>
-    <button class="button" onclick="window.location.href = window.location.origin + '/story'">story</button>
-    <div class="text-container">
-      <h1>© Hady Zen'in 2024</h1>
-    </div>
-  </body>
+  </style>
+</head>
+<body>
+  <h2 class="keren">Selamat datang!</h2>
+  <button class="button" onclick="window.location.href = window.location.origin + '/story'">Story</button>
+  <button class="button" onclick="window.location.href = window.location.origin + '/anime'">Anime</button>
+  <div class="text-container">
+    <h1>© Hady Zen'in 2024</h1>
+  </div>
+</body>
 </html>
