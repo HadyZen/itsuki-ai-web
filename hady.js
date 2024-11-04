@@ -10,6 +10,15 @@ app.get('/anime', (req, res) => {
     res.sendFile(path.join(__dirname, 'hady-zen', 'anime.html'));
 });
 
+app.get('/story', (req, res) => { 
+    res.sendFile(path.join(__dirname, 'hady-zen', 'story.html'));
+});
+
 app.listen(3001, () => {
-    console.log('Server is running on http://localhost:3000');
+    console.log(`
+█░█ ▄▀█ █▀▄ █▄█  ▀█ █▀▀ █▄░█
+█▀█ █▀█ █▄▀ ░█░  █▄ ██▄ █░▀█
+  hak cipta hady zen'in 2024
+
+LOG: Web berhasil di aktifkan!`);
 });
