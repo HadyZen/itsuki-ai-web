@@ -4,7 +4,8 @@
 
 * Klik copyright untuk informasi developer
 * Klik judul anime untuk masuk ke vidionya
-* Klik nama akun developer untuk melihat akunnya
+* Klik nama akun sosmed admin untuk melihat akunnya
+* klik foto sayu saat di admin untuk melihat akun utama
 
 **Screenshot:**
 > Random web buatan Hadi Pranata (Hady Zen'in)
