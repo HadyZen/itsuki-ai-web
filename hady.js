@@ -14,6 +14,10 @@ app.get('/story', (req, res) => {
     res.sendFile(path.join(__dirname, 'hady-zen', 'story.html'));
 });
 
+app.get('/admin', (req, res) => { 
+    res.sendFile(path.join(__dirname, 'hady-zen', 'admin.html'));
+});
+
 app.listen(3001, () => {
     console.log(`
 █░█ ▄▀█ █▀▄ █▄█  ▀█ █▀▀ █▄░█
