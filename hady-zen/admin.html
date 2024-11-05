@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin</title>
+  <style>
+    body {
+      background-image: url("https://raw.githubusercontent.com/HadyZen/hady-zen-api/refs/heads/main/anime/wallpaper.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0;
+      height: 100vh;
+    }
+
+    .website-title {
+      font-size: 34px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      animation: move 4s infinite;
+      text-shadow: 0 0 10px white, 0 0 30px white, 0 0 20px white;
+    }
+
+    @keyframes move {
+      0%, 100% {
+        transform: translateY(0);
+      }
+50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .anime-button {
+      background-color: transparent;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      padding: 1px 1px;
+      border: none;
+      border-radius: 9px;
+    }
+    .social-media {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .social-media img {
+      width: 100px;
+      height: 100px;
+      border-radius: 10%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .account-list {
+      flex: 1;
+      overflow-y: scroll;
+      padding: 20px;
+      color: white;
+    }
+
+    .account-item {
+      display: flex;
+      align-items: center;
+      padding: 14px;
+      border-bottom: 1px solid #0899;
+    }
+
+    .account-item img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 14px;
+    }
+
+    .account-item h2 {
+      margin: 0;
+    }
+
+    .account-item p {
+      margin: 6px 0;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="social-media">
+      <li>
+        <a href="https://www.facebook.com/hady.zen.in" target="_blank">
+          <img src="https://raw.githubusercontent.com/HadyZen/hady-zen-api/refs/heads/main/anime/sayu.jpg" alt="hady">
+        </a>
+      </li>
+    </div>
+
+    <h1 class="website-title">Hady Zen'in</h1>
+    <section class="account-list">
+      <div class="account-item">
+        <img src="https://raw.githubusercontent.com/HadyZen/hady-zen-api/refs/heads/main/anime/ms.png" alt="hady">
+        <a href="https://m.me/hady.zen.in" target="_blank"> <button class="anime-button">Hadi Pranata</button></a>
+      </div>
+      <div class="account-item">
+        <img src="https://raw.githubusercontent.com/HadyZen/hady-zen-api/refs/heads/main/anime/fb.jpg" alt="hady">
+        <a href="https://www.facebook.com/rizky.zenin.03" target="_blank"> <button class="anime-button">Futaro Uesugi</button></a>
+      </div>
+      <div class="account-item">
+        <img src="https://raw.githubusercontent.com/HadyZen/hady-zen-api/refs/heads/main/anime/fb.jpg" alt="hady">
+        <a href="https://www.facebook.com/p/rizky-zenin-61559749583806/" target="_blank"> <button class="anime-button">Rizky Zen'in</button></a>
+      </div>
+      <div class="account-item">
+        <img src="https://raw.githubusercontent.com/HadyZen/hady-zen-api/refs/heads/main/anime/wa.png" alt="hady">
+        <a href="https://wa.me/qr/274FOINUBS6KH1" target="_blank"> <button class="anime-button">Hady Zen'in</button></a>
+      </div>
+      <div class="account-item">
+        <img src="https://raw.githubusercontent.com/HadyZen/hady-zen-api/refs/heads/main/anime/git.png" alt="hady">
+        <a href="https://github.com/HadyZen" target="_blank"> <button class="anime-button">Hady Zen</button></a>
+      </div>
+    </section>
+  </body>
+</html>
