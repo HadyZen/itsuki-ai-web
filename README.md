@@ -1,5 +1,5 @@
-![hady]()
-# Random Web
+![hady](https://raw.githubusercontent.com/HadyZen/hady-zen-api/refs/heads/main/anime/logo.jpeg)
+# Random web ♡
 
 > Random web buatan Hadi Pranata (Hady Zen'in)
 
@@ -11,11 +11,11 @@
 
 **Screenshot:**
 
-![welcome]()
+![welcome](https://raw.githubusercontent.com/HadyZen/hady-zen-api/refs/heads/main/anime/ss.png)
 
 **Link:**
 
-* Saran web: koyeb.com
+* Saran web: https://koyeb.com
 * Website resmi ada di: https://hady-zen-web.koyeb.app/
 
 **Cara Menjalankan:**
