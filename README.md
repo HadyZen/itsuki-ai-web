@@ -1,7 +1,5 @@
 ![hady](https://raw.githubusercontent.com/HadyZen/hady-zen-api/refs/heads/main/anime/logo.jpeg)
-<div style="text-align: center;">
-𝗿𝗮𝗻𝗱𝗼𝗺 𝘄𝗲𝗯 ♡
-</div>
+| 𝗥𝗮𝗻𝗱𝗼𝗺 𝘄𝗲𝗯 ♡ |
 > Random web buatan Hadi Pranata (Hady Zen'in)
 
 **Fitur:**
