@@ -1,6 +1,4 @@
-![hady](https://raw.githubusercontent.com/HadyZen/hady-zen-api/refs/heads/main/anime/logo.jpeg)
-<h1 align="center">𝗥𝗔𝗡𝗗𝗢𝗠 𝗪𝗘𝗕 ♡</h1> <br />
-> Random web buatan Hadi Pranata (Hady Zen'in)
+![hady](https://raw.githubusercontent.com/HadyZen/hady-zen-api/refs/heads/main/anime/logo.jpeg) <h1 align="center">𝗥𝗔𝗡𝗗𝗢𝗠 𝗪𝗘𝗕 ♡</h1>
 
 **Fitur:**
 
@@ -9,7 +7,7 @@
 * Klik nama akun developer untuk melihat akunnya
 
 **Screenshot:**
-
+> Random web buatan Hadi Pranata (Hady Zen'in)
 ![welcome](https://raw.githubusercontent.com/HadyZen/hady-zen-api/refs/heads/main/anime/ss.png)
 
 **Link:**
